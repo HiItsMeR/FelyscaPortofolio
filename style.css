@@ -1,0 +1,297 @@
+body, .txthero, .navbar-brand, .card-title, .card-text, .carousel-caption, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.rubik-bubbles {
+    font-family: 'Rubik Bubbles', sans-serif;
+}
+
+
+h1{
+    font-weight: 1000;
+}
+
+
+.navbar bg-body-tertiary{
+    margin: 0.5cm;
+    background-color: #131313;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* White color for navbar links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #cccccc; /* Light gray on hover */
+}
+
+.custom-navbar {
+    background: linear-gradient(135deg, #bd80b8, #5b8184); /* Gradient background */
+    top: 0;
+    z-index: 5000;
+  }
+
+
+.intro-text{
+    color: #232323;
+}
+
+
+.hero {
+    width: 100%;
+    height: auto; /* Adjust height to fit content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center; /* Center text in hero */
+    padding-top: 30px; /* Add space above the carousel */
+}
+
+.txthero {
+    text-align: center;
+    font-size: larger;
+    color: aliceblue;
+    z-index: 1;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 10px
+}
+
+
+/* Fullscreen Video Background */
+/* Add to your style.css */
+/* Fullscreen Video Background */
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.back-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height for fullscreen coverage */
+    transform: translate(-50%, -50%); /* Center the video */
+    object-fit: cover; /* Cover the area without distortion */
+    z-index: -2; /* Ensure it's behind all other content */
+}
+
+.txthero {
+    position: relative;
+    z-index: 1; /* Text appears above video */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+}
+
+  
+  
+  
+  /* Removed text shadow for better visibility */
+  
+
+
+.float-right {
+    float: right;
+  }
+  
+
+
+.carousel-item {
+    height: 11cm; /* Set a fixed height for the carousel items */
+    width: 100%cm;
+    margin-top: 0cm;
+
+}
+
+.carousel-item img {
+    width: 100%;      /* Make sure images cover the carousel width */
+    height: 100%;     /* Fill the height of the carousel item */
+    object-fit: cover; /* Maintain aspect ratio while filling space */
+}
+
+.custom-card {
+    width: 320px; /* Set a fixed width for square shape */
+    height: 370px; /* Set the same height as width for square shape */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+    cursor: pointer; /* Change cursor to pointer */
+    overflow: hidden; /* Ensure content doesn't overflow */
+    margin: 0 auto; /* Center the card */
+    margin-top: 1.5cm;
+    background-color: #5B8184; /* Set the desired background color */
+    color: white; /* Change text color for better readability */
+    display: flex; /* Enable flex for centering elements */
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text */
+}
+.card-img-top {
+    border-radius: 10px; /* Optional: Add some border-radius for softer corners */
+    width: 100%; /* Make the image fill the card width */
+    height: auto; /* Set to auto to maintain aspect ratio */
+    max-height: 190px; /* Set a max height to limit the image size */
+    object-fit: cover; /* Use 'cover' to fill the area without distortion */
+    margin: 10px auto; /* Center the image */
+}
+
+.custom-card:hover {
+    transform: translateY(-10px); /* Lift the card up on hover */
+    box-shadow: 0 90px 20px rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.btn-primary btn-lg{
+    align-items: center;
+}
+
+.carousel-caption {
+    color: #333 !important; /* Ubah warna teks menjadi hitam */
+}
+
+
+.modal-image-large {
+    width: 80%; /* Adjust width as needed, or specify height */
+    max-width: 600px; /* Optional max width */
+    margin: 0 auto; /* Center image */
+  }
+  
+
+  /* Styling for Details button */
+.card .btn-primary {
+    background-color: #333; /* Set background color to #333 */
+    border-color: #333; /* Match border color */
+  }
+  
+  .card .btn-primary:hover {
+    background-color: #1a1a1a; /* Darken slightly on hover */
+    border-color: #1a1a1a; /* Match border color */
+  }
+  
+
+h5{
+    font-weight: 1000;
+}
+
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute; /* Keeps the controls within the carousel */
+    top: 50%; /* Centers the controls vertically */
+    transform: translateY(-50%); /* Centers the controls exactly in the middle */
+    width: 40px; /* Adjust button width */
+    height: 40px; /* Adjust button height */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: black semi-transparent background */
+    border-radius: 50%; /* Optional: makes the buttons circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; /* Set icon color to black */
+    width: 20px; /* Adjust width to fit inside the button */
+    height: 20px; /* Adjust height */
+    background-size: 100%; /* Ensures icon fills the button */
+    border-radius: 50%; /* Optional: round icon */
+}
+
+.carousel-control-prev {
+    left: 30px; /* Adjust this value to add spacing from the left */
+}
+
+.carousel-control-next {
+    right: 30px; /* Adjust this value to add spacing from the right */
+}
+
+
+/* If you want to change the button border as well */
+.carousel-control-prev,
+.carousel-control-next {
+    border: 0px solid black; /* Optional: add a border if desired */
+}
+
+
+.custom-button {
+    background-color: #333; /* Change to desired background color */
+    color: white; /* Change text color */
+}
+.div-skills {
+    text-align: center;
+    font-weight: 90;
+    
+}
+
+h1.hard-skills { /* Adjust the selector based on your HTML structure */
+    color: #5B8184;
+    font-family: 'Rubik Bubbles', sans-serif; /* Fallback to sans-serif if the font fails to load */
+    align-items: center;
+    margin-top: 0.5cm;
+}
+
+.carousel-container {
+    position: relative; /* Ensures .featured-designs is positioned relative to this container */
+    padding-top: 20px; /* Adjust padding as needed */
+}
+
+.featured-designs {
+    position: relative; /* Change to relative positioning */
+    color: #5B8184;
+    font-family: 'Rubik Bubbles', cursive;
+    font-size: 2.5em; /* Adjust size if needed */
+    text-align: center;
+    margin-top: 1rem; /* Adds spacing above the carousel */
+}
+
+.carouselslide{
+    margin-top: 15cm;
+
+}
+
+about me
+.aboutmetitle {
+    margin-top: 2cm;
+    text-align: center;
+  }
+
+ 
+  .about-section {
+    align-self: center;
+    display: flex;
+    align-items: center; /* Aligns content vertically */
+    gap: 20px; /* Adds space between image and description */
+  }
+  
+  .about-image {
+    width: 300px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 8px; /* Optional: rounds the corners of the image */
+  }
+  
+  .about-description {
+    font-size: 1em; /* Adjust font size */
+    color: #333; /* Adjust text color */
+  }
+  
+  .nav-item-margin {
+    margin: 15px; /* Adjust the margin as needed */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
