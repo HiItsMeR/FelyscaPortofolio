@@ -12,8 +12,8 @@ h1{
 }
 
 
-.navbar bg-body-tertiary{
-    margin: 0.5cm;
+.navbar.bg-body-tertiary {
+    margin: 0.5rem;
     background-color: #131313;
 }
 
@@ -37,35 +37,16 @@ h1{
 }
 
 
-.hero {
-    width: 100%;
-    height: auto; /* Adjust height to fit content */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    text-align: center; /* Center text in hero */
-    padding-top: 30px; /* Add space above the carousel */
-}
-
-.txthero {
-    text-align: center;
-    font-size: larger;
-    color: aliceblue;
-    z-index: 1;
-    font-weight: 500;
-    margin-top: 20px;
-    margin-bottom: 10px
-}
-
-
-/* Fullscreen Video Background */
-/* Add to your style.css */
 /* Fullscreen Video Background */
 .hero {
     position: relative;
     width: 100%;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
     overflow: hidden;
 }
 
@@ -73,18 +54,22 @@ h1{
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 100vw; /* Full width */
-    height: 100vh; /* Full height for fullscreen coverage */
-    transform: translate(-50%, -50%); /* Center the video */
-    object-fit: cover; /* Cover the area without distortion */
-    z-index: -2; /* Ensure it's behind all other content */
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -2;
 }
 
 .txthero {
     position: relative;
-    z-index: 1; /* Text appears above video */
-    color: white; /* Text color */
-    text-align: center; /* Center text */
+    z-index: 1;
+    text-align: center;
+    font-size: larger;
+    color: white;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
   
@@ -101,9 +86,9 @@ h1{
 
 
 .carousel-item {
-    height: 11cm; /* Set a fixed height for the carousel items */
-    width: 100%cm;
-    margin-top: 0cm;
+    height: 400px; /* Set a fixed height for the carousel items */
+    width: 100%;
+    margin-top: 0;
 
 }
 
@@ -120,7 +105,7 @@ h1{
     cursor: pointer; /* Change cursor to pointer */
     overflow: hidden; /* Ensure content doesn't overflow */
     margin: 0 auto; /* Center the card */
-    margin-top: 1.5cm;
+    margin-top: 1.5rem;
     background-color: #5B8184; /* Set the desired background color */
     color: white; /* Change text color for better readability */
     display: flex; /* Enable flex for centering elements */
@@ -147,7 +132,7 @@ h1{
 
 .custom-card:hover {
     transform: translateY(-10px); /* Lift the card up on hover */
-    box-shadow: 0 90px 20px rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
 
 .btn-primary btn-lg{
@@ -237,7 +222,7 @@ h1.hard-skills { /* Adjust the selector based on your HTML structure */
     color: #5B8184;
     font-family: 'Rubik Bubbles', sans-serif; /* Fallback to sans-serif if the font fails to load */
     align-items: center;
-    margin-top: 0.5cm;
+    margin-top: 1rem;
 }
 
 .carousel-container {
@@ -255,13 +240,13 @@ h1.hard-skills { /* Adjust the selector based on your HTML structure */
 }
 
 .carouselslide{
-    margin-top: 15cm;
+    margin-top: 10rem;
 
 }
 
-about me
+/* About me */
 .aboutmetitle {
-    margin-top: 2cm;
+    margin-top: 3rem;
     text-align: center;
   }
 
@@ -294,4 +279,154 @@ about me
     box-sizing: border-box;
 }
 
+/* ===== RESPONSIVE / MOBILE ===== */
+
+/* Tablet and below */
+@media (max-width: 991px) {
+    .hero {
+        min-height: 70vh;
+        padding-top: 70px;
+    }
+
+    .txthero h1 {
+        font-size: 1.6rem;
+    }
+
+    .txthero h5 {
+        font-size: 0.95rem;
+    }
+
+    .carousel-item {
+        height: 280px;
+    }
+
+    .featured-designs {
+        font-size: 1.8em;
+    }
+
+    h1.hard-skills {
+        margin-top: 1.5rem;
+    }
+
+    .about-section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-image {
+        width: 250px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .hero {
+        min-height: 60vh;
+        padding-top: 60px;
+    }
+
+    .txthero {
+        padding: 0 15px;
+    }
+
+    .txthero h1 {
+        font-size: 1.3rem;
+    }
+
+    .txthero h5 {
+        font-size: 0.85rem;
+    }
+
+    .txthero .img-fluid {
+        max-width: 95% !important;
+    }
+
+    .carousel-item {
+        height: 200px;
+    }
+
+    .carousel-control-prev {
+        left: 5px;
+    }
+
+    .carousel-control-next {
+        right: 5px;
+    }
+
+    .featured-designs {
+        font-size: 1.4em;
+    }
+
+    .pulsate-text {
+        font-size: 0.9em;
+    }
+
+    .custom-card {
+        width: 280px;
+        height: auto;
+        min-height: 300px;
+        margin-top: 1rem;
+    }
+
+    .card-img-top {
+        max-height: 150px;
+    }
+
+    h1.hard-skills {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        width: 200px;
+    }
+
+    .aboutmetitle {
+        margin-top: 1.5rem;
+    }
+
+    .modal-image-large {
+        width: 95%;
+    }
+
+    /* Override cm margins on mobile */
+    [style*="margin"][style*="cm"] {
+        margin: 1rem !important;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+    .hero {
+        min-height: 50vh;
+    }
+
+    .txthero h1 {
+        font-size: 1.1rem;
+    }
+
+    .carousel-item {
+        height: 160px;
+    }
+
+    .custom-card {
+        width: 90%;
+        max-width: 280px;
+    }
+
+    .featured-designs {
+        font-size: 1.2em;
+    }
+}
+
+/* Ensure images and videos never overflow on any screen */
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
 

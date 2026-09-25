@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sort -k5 -h -r)",
+      "Bash(for f:*)",
+      "Bash(do echo:*)",
+      "Read(//e/freelance/FelyscaPortofolio/**)",
+      "Bash(done)"
+    ]
+  }
+}
